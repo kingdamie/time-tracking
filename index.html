@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <div class="name">
+          <img src="images/image-jeremy.png" alt="Jeremy" />
+          <div>
+            <p>Report for</p>
+            <h3>Jeremy Robson</h3>
+          </div>
+        </div>
+        <div class="day">
+          <ul>
+            <li class="list active">Daily</li>
+            <li class="list">Weekly</li>
+            <li class="list">Monthly</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row" id="work">
+          <div class="back">
+            <img src="images/icon-work.svg" alt="work" />
+          </div>
+          <div class="actual">
+            <div class="head">
+              <h4>Work</h4>
+              <img src="images/icon-ellipsis.svg" alt="icon" />
+            </div>
+            <div class="hours">
+              <h3 id="work-time">5hrs</h3>
+              <p id="work-statement">Yesterday - 7hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="exe">
+          <div class="back">
+            <img src="images/icon-exercise.svg" alt="work" />
+          </div>
+          <div class="actual">
+            <div class="head">
+              <h4>Exercise</h4>
+              <img src="images/icon-ellipsis.svg" alt="icon" />
+            </div>
+            <div class="hours">
+              <h3 id="exe-time">1hrs</h3>
+              <p id="exe-statement">Yesterday - 1hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="row" id="play">
+          <div class="back">
+            <img src="images/icon-play.svg" alt="work" />
+          </div>
+          <div class="actual">
+            <div class="head">
+              <h4>Play</h4>
+              <img src="images/icon-ellipsis.svg" alt="icon" />
+            </div>
+            <div class="hours">
+              <h3 id="play-time">1hrs</h3>
+              <p id="play-statement">Yesterday - 1hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="social">
+          <div class="back">
+            <img src="images/icon-social.svg" alt="work" />
+          </div>
+          <div class="actual">
+            <div class="head">
+              <h4>Social</h4>
+              <img src="images/icon-ellipsis.svg" alt="icon" />
+            </div>
+            <div class="hours">
+              <h3 id="social-time">1hrs</h3>
+              <p id="social-statement">Yesterday - 3hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="row" id="study">
+          <div class="back">
+            <img src="images/icon-study.svg" alt="work" />
+          </div>
+          <div class="actual">
+            <div class="head">
+              <h4>Study</h4>
+              <img src="images/icon-ellipsis.svg" alt="icon" />
+            </div>
+            <div class="hours">
+              <h3 id="study-time">0hrs</h3>
+              <p id="study-statement">Yesterday - 1hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="self">
+          <div class="back">
+            <img src="images/icon-self-care.svg" alt="work" />
+          </div>
+          <div class="actual">
+            <div class="head">
+              <h4>Self Care</h4>
+              <img src="images/icon-ellipsis.svg" alt="icon" />
+            </div>
+            <div class="hours">
+              <h3 id="self-time">0hrs</h3>
+              <p id="self-statement">Yesterday - 1hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
